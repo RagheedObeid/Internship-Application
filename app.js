@@ -65,7 +65,7 @@ app.use("/internships", internshipRoutes);
 app.use("/internships/id=:id/applications", applicationRoutes);
 app.use(indexRoutes);
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log("server is up and running");
 });
 
